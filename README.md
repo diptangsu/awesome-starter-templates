@@ -27,7 +27,7 @@ The `README.md` files inside each application directory must have detailed steps
 
 #### hello-world-app
 Method | Url | Description | Response | Error
----:| --- | --- | --- | ---
+--- | --- | --- | --- | ---
 GET | `/hello` | Display **Hello World** | 200 | 
 
 
