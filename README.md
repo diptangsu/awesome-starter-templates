@@ -19,9 +19,9 @@ The idea of this repository is to allow newcommers to a particular web framework
 │   │   └── ...
 │   └── README.md
 └── README.md
-
 ```
-The `README.md` files inside each application directory must have detailed steps to set-up and run the application
+Please maintain this structure while adding other projects.  
+The `README.md` files inside each application directory must have detailed steps to set-up and run that application.
 
 ## URLs/Endpoints of each project
 
@@ -62,6 +62,22 @@ id | int | autoincrement primary key
 username | text | unique
 age | integer |
 name | text |
+
+
+## Projects in this repository
+- Python
+  - Flask
+    - [hello-world-app](/Python/Flask/hello-world-app)
+    - [basci-CRUD-app](/Python/Flask/basic-CRUD-app)
+    - [basic-CRUD-api](/Python/Flask/basic-CRUD-api)
+  - Django
+    - [hello-world-app](/Python/Django/hello-world-app)
+    - [basci-CRUD-app](/Python/Django/basic-CRUD-app)
+    - [basic-CRUD-api](/Python/Django/basic-CRUD-api)
+  - Sanic
+    - [hello-world-app](/Python/Sanic/hello-world-app)
+    - [basci-CRUD-app](/Python/Sanic/basic-CRUD-app)
+    - [basic-CRUD-api](/Python/Sanic/basic-CRUD-api)
 
 
 ## What this repository is not
