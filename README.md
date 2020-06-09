@@ -1,8 +1,10 @@
 # awesome-starter-templates
-A curated list of starter templates for popular web frameworks
+A curated list of starter templates for popular web frameworks.
+
+The idea of this repository is to allow newcommers to a particular web framework to have a look at what a sample project in that framework might look like, what the best practices are, and how code should be structured in that framework for it's corresponding language.
 
 
-# Folder structure of the repository
+## Folder structure of the repository
 ```
 .
 ├── <Language-1>
@@ -21,7 +23,45 @@ A curated list of starter templates for popular web frameworks
 ```
 The `README.md` files inside each application directory must have detailed steps to set-up and run the application
 
+## URLs/Endpoints of each project
+
+#### hello-world-app
+```
+GET /
+GET /hello
+```
+
+#### basic-CRUD-app
+```
+GET /
+GET /users
+POST /users
+GET /users/{user-id}
+PUT /users/{user-id}
+DELETE /users/{user-id}
+GET /users/search  # search by username
+```
+
+#### basic-CRUD-api
+```
+GET /
+GET /api/users
+POST /api/users
+GET /api/users/{user-id}
+PUT /api/users/{user-id}
+DELETE /api/users/{user-id}
+GET /api/users/search  # search by username
+```
+
+#### User model for the API and basic-CRUD-app
+```
+id autoincrement primary key
+username unique
+age integer
+name text
+```
+
 
 ## Contributing
-To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/Sorting-Algorithms/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project.
+To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/awesome-starter-templates/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project.
 
