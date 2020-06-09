@@ -16,5 +16,7 @@ If you want to add something new to the repository that hasn't been added as an 
 5. Push your code to your branch.
 6. Finally, open a PR against the `master` branch of this repository.
 
+Please also remember to update the `.gitignore` file when adding code for a new project when necesary.
+
 Good luck!
 
