@@ -64,6 +64,10 @@ age | integer |
 name | text |
 
 
+## What this repository is not
+This is not a tutorial, therefore the individual README files need not contain installation steps for that particular language. It can be assumed that an user would know how to install the compiler/interpreter of a language before jumping onto learning a framework in that language. However, the installation steps, if any, for frameworks must be written in the README files so that anyone can follow the steps and get their server up and running in their local machines.
+
+
 ## Contributing
 To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/awesome-starter-templates/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project.
 
