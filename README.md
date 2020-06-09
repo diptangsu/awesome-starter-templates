@@ -26,34 +26,33 @@ The `README.md` files inside each application directory must have detailed steps
 ## URLs/Endpoints of each project
 
 #### hello-world-app
-Method | Url | Description
---- | --- | ---
-GET | `/` |
-GET | `/hello` |
+Method | Url | Description | Response | Error
+---:| --- | --- | --- | ---
+GET | `/hello` | Display **Hello World** | 200 | 
 
 
 #### basic-CRUD-app
-Method | Url | Description
---- | --- | ---
-GET | `/` |
-GET | `/users` | 
-POST | `/users` | 
-GET | `/users/{user-id}` | 
-PUT | `/users/{user-id}` | 
-DELETE | `/users/{user-id}` | 
-GET | `/users/search`  | Search by username
+Method | Url | Description | Response | Error
+--- | --- | --- | --- | ---
+GET | `/` | Display **index** or<br>**website running** | 200 (Ok) |
+GET | `/users` | Display a list of all users | 200 (Ok) |
+POST | `/users` |  Add a user | 201 (Created) |
+GET | `/users/{user-id}` | Display details of user<br>with id=user-id | 200 | 404 (Not Found)
+PUT | `/users/{user-id}` | Update details of user<br>with id=user-id | 200 (Ok) or<br>204 (No Content) | 404 (Not found)
+DELETE | `/users/{user-id}` | Delete user<br>with id=user-id | 200 (Ok) | 404 (Not Found)
+GET | `/users/search`  | Search users by username | 200 (Ok) |
 
 
 #### basic-CRUD-api
-Method | Url | Description
---- | --- | ---
-GET | `/` |
-GET | `/api/users` |
-POST | `/api/users` |
-GET | `/api/users/{user-id}` |
-PUT | `/api/users/{user-id}` |
-DELETE | `/api/users/{user-id}` |
-GET | `/api/users/search` | Search by username
+Method | Url | Description | Response | Error
+--- | --- | --- | --- | ---
+GET | `/` | Return **`{status: "Running"}`** | |
+GET | `/api/users` | Return a list of all users | |
+POST | `/api/users` | Add a new user | |
+GET | `/api/users/{user-id}` | Return user with id=user-id | |
+PUT | `/api/users/{user-id}` | Update user with id=user-id | |
+DELETE | `/api/users/{user-id}` | Delete user with id=user-id | |
+GET | `/api/users/search` | Search users by username | |
 
 
 #### User model for the API and basic-CRUD-app
