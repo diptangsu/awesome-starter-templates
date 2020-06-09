@@ -1,5 +1,13 @@
 # Flask
 
+# Folder structure
+```
+.
+├── app.py
+├── README.md
+└── requirements.txt
+```
+
 # Setup
 Make sure you have `python3` installed in your machine before you continue. For windows users, the path to `python3` must be added to the system environment variable `PATH`. 
 
