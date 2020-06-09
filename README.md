@@ -26,40 +26,43 @@ The `README.md` files inside each application directory must have detailed steps
 ## URLs/Endpoints of each project
 
 #### hello-world-app
-```
-GET /
-GET /hello
-```
+Method | Url | Description
+--- | --- | ---
+GET | `/` |
+GET | `/hello` |
+
 
 #### basic-CRUD-app
-```
-GET /
-GET /users
-POST /users
-GET /users/{user-id}
-PUT /users/{user-id}
-DELETE /users/{user-id}
-GET /users/search  # search by username
-```
+Method | Url | Description
+--- | --- | ---
+GET | `/` |
+GET | `/users` | 
+POST | `/users` | 
+GET | `/users/{user-id}` | 
+PUT | `/users/{user-id}` | 
+DELETE | `/users/{user-id}` | 
+GET | `/users/search`  | Search by username
+
 
 #### basic-CRUD-api
-```
-GET /
-GET /api/users
-POST /api/users
-GET /api/users/{user-id}
-PUT /api/users/{user-id}
-DELETE /api/users/{user-id}
-GET /api/users/search  # search by username
-```
+Method | Url | Description
+--- | --- | ---
+GET | `/` |
+GET | `/api/users` |
+POST | `/api/users` |
+GET | `/api/users/{user-id}` |
+PUT | `/api/users/{user-id}` |
+DELETE | `/api/users/{user-id}` |
+GET | `/api/users/search` | Search by username
+
 
 #### User model for the API and basic-CRUD-app
-```
-id autoincrement primary key
-username unique
-age integer
-name text
-```
+Column | Type | Constraints
+--- | --- | ---
+id | int | autoincrement primary key
+username | text | unique
+age | integer |
+name | text |
 
 
 ## Contributing
