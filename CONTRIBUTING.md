@@ -18,5 +18,7 @@ If you want to add something new to the repository that hasn't been added as an 
 
 Please also remember to update the `.gitignore` file when adding code for a new project when necesary.
 
+If you want an example, have a look at the [flask hello world app](/Python/Flask/hello-world-app/README.md).
+
 Good luck!
 
