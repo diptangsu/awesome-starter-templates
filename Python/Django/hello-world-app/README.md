@@ -80,8 +80,9 @@ You can install the requirements for this project from the [requirements.txt](/P
 Since you're inside a virtualenv, the requirements will be installed inside it, keeping the project requirements specific to the project.
 
 ## Running the Applcation
-Django comes with a lightweight development server. You can run it with the following command: `python manage.py runserver`
+Django comes with a lightweight development server. You can run it with the following command:
 ```
+$ python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
