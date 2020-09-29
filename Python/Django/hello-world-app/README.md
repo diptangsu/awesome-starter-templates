@@ -1,4 +1,4 @@
-# Flask
+# Django
 
 # Folder structure
 ```
@@ -92,7 +92,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-**Important:** This is a development serever, it's goal is only to speed up the development. Please use a production web server for your production environment.
+**Important:** This is a development serever, it's only goal is to speed up the development. Please use a production web server for your production environment.
 
 ## Viewing the application in a web browser
 Open up a web browser and navigate to
