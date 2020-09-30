@@ -1,8 +1,7 @@
 # awesome-starter-templates
 A curated list of starter templates for popular web frameworks.
 
-The idea of this repository is to allow newcommers to a particular web framework to have a look at what a sample project in that framework might look like, what the best practices are, and how code should be structured in that framework for it's corresponding language.
-
+The idea of this repository is to allow newcomers to a particular web framework to have a look at what a sample project in that framework might look like, what the best practices are, and how code should be structured in that framework for it's corresponding language.
 
 ## Folder structure of the repository
 ```
@@ -81,7 +80,7 @@ name | text |
 
 
 ## What this repository is not
-This is not a tutorial, therefore the individual README files need not contain installation steps for that particular language. It can be assumed that an user would know how to install the compiler/interpreter of a language before jumping onto learning a framework in that language. However, the installation steps, if any, for frameworks must be written in the README files so that anyone can follow the steps and get their server up and running in their local machines.
+This is not a tutorial, therefore the individual README files need not contain installation steps for that particular language. It can be assumed that a user would know how to install the compiler/interpreter of a language before jumping onto learning a framework in that language. However, the installation steps, if any, for frameworks must be written in the README files so that anyone can follow the steps and get their server up and running in their local machines.
 
 
 ## Contributing
