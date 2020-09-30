@@ -461,3 +461,7 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/flask,python,virtualenv,java,intellij,pycharm,django
+
+.vscode
+*.db
+
