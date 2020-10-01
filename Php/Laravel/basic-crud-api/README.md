@@ -1,11 +1,3 @@
-GET	/	Return {status: "Running"}		
-GET	/api/users	Return a list of all users		
-POST	/api/users	Add a new user		
-GET	/api/users/{user-id}	Return user with id=user-id		
-PUT	/api/users/{user-id}	Update user with id=user-id		
-DELETE	/api/users/{user-id}	Delete user with id=user-id		
-GET	/api/users/search	Search users by username
-
 # Laravel
 
 # Folder structure
