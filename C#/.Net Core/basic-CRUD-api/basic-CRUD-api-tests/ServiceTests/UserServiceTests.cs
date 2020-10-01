@@ -31,7 +31,7 @@ namespace basic_CRUD_api_tests.ServiceTests
         private void SeedData()
         {
             context.Users.AddRange(UsersDataHelper.GetAll());
-            context.SaveChanges();
+            SaveAndDetachContext(context);
         }
 
         [Test]

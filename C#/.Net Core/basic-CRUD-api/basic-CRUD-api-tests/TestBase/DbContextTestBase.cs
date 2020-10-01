@@ -14,12 +14,22 @@ namespace basic_CRUD_api_tests.TestBase
             databaseName ??= "basic_CRUD_api_test";
             var serviceProvider = new ServiceCollection()
                 .AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase(databaseName), ServiceLifetime.Scoped)
                 .BuildServiceProvider();
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
                 .UseInternalServiceProvider(serviceProvider)
                 .UseInMemoryDatabase(databaseName)
                 .Options;
             return new ApplicationDbContext(options);
+        }
+
+        protected void SaveAndDetachContext(DbContext context)
+        {
+            context.SaveChanges();
+            foreach (var entity in context.ChangeTracker.Entries())
+            {
+                entity.State = EntityState.Detached;
+            }
         }
     }
 }
