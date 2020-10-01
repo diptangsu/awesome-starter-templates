@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GET	/	Return {status: "Running"}		
 GET	/api/users	Return a list of all users		
 POST	/api/users	Add a new user		
@@ -98,3 +99,5 @@ http://127.0.0.1:5000/hello
 ```
 Or, click [here](http://127.0.0.1:5000/hello) to do the same.
 
+=======
+>>>>>>> parent of 3fb65b6... craft laravel app
