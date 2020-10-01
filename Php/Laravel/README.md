@@ -1,61 +1,100 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+GET	/	Return {status: "Running"}		
+GET	/api/users	Return a list of all users		
+POST	/api/users	Add a new user		
+GET	/api/users/{user-id}	Return user with id=user-id		
+PUT	/api/users/{user-id}	Update user with id=user-id		
+DELETE	/api/users/{user-id}	Delete user with id=user-id		
+GET	/api/users/search	Search users by username
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# Flask
 
-## About Laravel
+# Folder structure
+```
+.
+├── app.py
+├── README.md
+└── requirements.txt
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Setup
+Make sure you have `python3` installed in your machine before you continue. For windows users, the path to `python3` must be added to the system environment variable `PATH`. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Install virtualenv in python. 
+```
+pip3 install virtualenv
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Create a virtual environment
+### Linux
+```bash
+$ virtualenv -p python3 venv
+```
+This will create a virtual environment named `venv` with `python3` as its interpreter.
 
-## Learning Laravel
+## Windows
+If you have multiple versions of python installed and added to `PATH`, find out the path for `python3`.  
+```cmd
+> where python
+C:\Python27\python.exe
+C:\Users\deepd\AppData\Local\Programs\Python\Python37-32\python.exe
+C:\Users\deepd\AppData\Local\Programs\Python\Python36\python.exe
+```
+You will get an output of all the python execuables that are added to `PATH`. For example I have `python2.7`, `python3.6` and `python3.7` installed.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+In this command, the path to `python3.6` is being used to create the virtual environment.
+```cmd
+> virtualenv -p C:\Users\deepd\AppData\Local\Programs\Python\Python36\python.exe venv
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Activating the virtualenv
+### Linux
+```bash
+$ source venv/bin/activate
+(venv) ...$ 
+```
+### Windows
+```cmd
+> venv\Scripts\activate
+(venv) ...> 
+```
 
-## Laravel Sponsors
+## Installing requirements
+You can install the requirements for this project from the [requirements.txt](/Python/Flask/hello-world-app/requirements.txt) file by using the command  
+```
+(venv) ...$ pip install -r requirements.txt
+```
+Since you're inside a virtualenv, the requirements will be installed inside it, keeping the project requirements specific to the project.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Running the Applcation
+Run the [app.py](/Python/Flask/hello-world-app/app.py) file to start the app server.  
+```
+(venv) ...$ python app.py
 
-### Premium Partners
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 249-131-684
+```
+or
+```
+(venv) ...$ flask run
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
-## Contributing
+## Viewing the application in a web browser
+Open up a web browser and navigate to
+```
+http://127.0.0.1:5000/hello
+```
+Or, click [here](http://127.0.0.1:5000/hello) to do the same.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
