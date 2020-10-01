@@ -11,9 +11,18 @@ GET	/api/users/search	Search users by username
 # Folder structure
 ```
 .
-├── app.py
+├── app
+├────── Http
+├─────────── Controller
+├────────────────────── Api
+├────────────────────────── UserController.php
+├── routes
+├───────── api.php
+├── database
+├─────────── migrations
+├────────────────────── user_table.php
 ├── README.md
-└── requirements.txt
+└── .env
 ```
 
 # Setup
@@ -49,7 +58,7 @@ http://127.0.0.1:8000/api
 #### basic-CRUD-api
 Method | Url | Description | Response | Error
 --- | --- | --- | --- | ---
-GET | `/` | Return **`{status: "Running"}`** | |
+GET | `/api` | Return **`{status: "Running"}`** | |
 GET | `/api/users` | Return a list of all users | |
 POST | `/api/users` | Add a new user | |
 GET | `/api/users/{user-id}` | Return user with id=user-id | |
