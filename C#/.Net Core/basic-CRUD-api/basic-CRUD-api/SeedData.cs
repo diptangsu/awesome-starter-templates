@@ -9,7 +9,7 @@ namespace basic_CRUD_api
 {
     public static class SeedData
     {
-        internal static void Seed(this ApplicationDbContext context)
+        public static void Seed(this ApplicationDbContext context)
         {
             var users = new List<User>()
             {

@@ -5,11 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace basic_CRUD_api.Services.Implementations
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly ApplicationDbContext _context;
         public UserService(ApplicationDbContext context)
@@ -57,17 +56,19 @@ namespace basic_CRUD_api.Services.Implementations
 
         public int Update(int userId, User user)
         {
-            try
-            {
-                user.Id = userId;
-                _context.Users.Update(user);
-                _context.SaveChanges();
-                return user.Id;
-            }
-            catch (DbUpdateException)
+            var currUser = GetById(userId);
+            if (currUser == null)
             {
                 return 0;
             }
+
+            currUser.Id = userId;
+            currUser.Name = user.Name;
+            currUser.Age = user.Age;
+            currUser.Username = user.Username;
+            _context.Update(currUser);
+            _context.SaveChanges();
+            return currUser.Id;
         }
     }
 }

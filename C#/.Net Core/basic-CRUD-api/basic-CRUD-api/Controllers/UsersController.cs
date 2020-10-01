@@ -3,14 +3,11 @@ using basic_CRUD_api.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace basic_CRUD_api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
         public UsersController(IUserService userService)
@@ -19,15 +16,15 @@ namespace basic_CRUD_api.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IActionResult Get()
         {
-            return _userService.GetAll();
+            return Ok(_userService.GetAll());
         }
 
         [HttpPost]
         public IActionResult Post(User user)
         {
-            return new CreatedResult("", _userService.AddUser(user));
+            return Created("", _userService.AddUser(user));
         }
 
         [HttpGet("{userId}")]
@@ -35,8 +32,8 @@ namespace basic_CRUD_api.Controllers
         {
             var res = _userService.GetById(userId);
             if (res == null)
-                return new NotFoundResult();
-            return new OkObjectResult(res);
+                return NotFound();
+            return Ok(res);
         }
 
         [HttpPut("{userId}")]
@@ -44,21 +41,21 @@ namespace basic_CRUD_api.Controllers
         {
             var res = _userService.Update(userId, user);
             if (res == 0)
-                return new NotFoundResult();
-            return new OkObjectResult(res);
+                return NotFound();
+            return Ok(res);
         }
 
         [HttpDelete("{userId}")]
         public IActionResult DeleteById(int userId)
         {
             _userService.DeleteById(userId);
-            return new OkResult();
+            return Ok();
         }
 
         [HttpGet("search")]
-        public IActionResult GetById([FromQuery] string username)
+        public IActionResult Search([FromQuery] string username)
         {
-            return new OkObjectResult(_userService.SearchByUsername(username));
+            return Ok(_userService.SearchByUsername(username));
         }
     }
 }
