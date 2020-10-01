@@ -30,7 +30,7 @@ Make sure you have `composer and xampp/wamp` installed in your machine before yo
 
 ## Install dependencie in laravel. 
 ```
-composer update
+composer install
 ```
 
 ## Change your database
