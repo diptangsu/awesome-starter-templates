@@ -25,6 +25,12 @@ class UserController extends Controller
                 ]);
     }
 
+    public function api()
+    {
+        //
+        return response()->json( ['msg' => 'Running', 'status' => 200], 200);
+    }
+
 
     public function search($user)
     {

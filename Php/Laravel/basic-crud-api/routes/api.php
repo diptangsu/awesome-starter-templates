@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', 'Api\UserController@api');
 Route::get('users', 'Api\UserController@index');
 Route::get('users/{user}', 'Api\UserController@show');
 Route::get('users/search/{user}', 'Api\UserController@search');
