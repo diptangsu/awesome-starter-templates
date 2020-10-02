@@ -17,9 +17,16 @@ def create_tables():
 
 api.add_resource(
     UserResource,
-    '/users/',
-    '/users/<int:user_id>/'
+    '/users',
+    '/users/<int:user_id>'
 )
+
+
+@app.route('/')
+def index():
+    return {
+        'status': 'running'
+    }
 
 
 if __name__ == '__main__':
