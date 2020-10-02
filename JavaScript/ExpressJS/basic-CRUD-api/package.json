@@ -1,0 +1,9 @@
+{
+  "name": "basic-CRUD-api",
+  "version": "1.0.0",
+  "description": "A Basic CRUD API using ExpressJS",
+  "main": "app.js",
+  "author": "Gita Alekhya Paul",
+  "license": "MIT",
+  "private": false
+}
