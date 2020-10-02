@@ -19,16 +19,27 @@ class User(db.Model):
     def __repr__(self):
         return f'{self.username}'
 
-    def get(self, **kwargs):
+    @classmethod
+    def get(cls, **kwargs):
         if kwargs:
-            return User.query.filter_by(**kwargs)
+            return cls.query.filter_by(**kwargs)
         else:
-            return User.query.all()
+            return cls.query.all()
 
     def save(self):
-        db.session.add(self)
-        db.session.commit()
+        try:
+            db.session.add(self)
+            db.session.commit()
+        except:
+            raise
 
     def delete(self):
         db.session.delete(self)
         db.session.commit()
+
+    def to_json(self):
+        return {
+            'username': self.username,
+            'name': self.name,
+            'age': self.age,
+        }
