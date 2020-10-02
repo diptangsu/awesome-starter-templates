@@ -1,0 +1,17 @@
+{
+  "name": "hello-world-app",
+  "version": "1.0.0",
+  "description": "A Hello World App Using ExpressJS",
+  "main": "app.js",
+  "author": "Gita Alekhya Paul",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
