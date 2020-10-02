@@ -11,12 +11,14 @@ If you want to add something new to the repository that hasn't been added as an 
 
 1. Fork this repository.
 2. Clone your forked repository
-3. Create a new branch with the name as follows - `<your-name>/<issue-number>/<your-changes>`.
+3. Create a new branch with the name as follows - `<your-name>/<issue-number>/<your-changes>`. Or you can just add changes to the master branch of your fork.
 4. Add all the relevant code and tests. We encourage everyone to improve the readme as well! :)
 5. Push your code to your branch.
 6. Finally, open a PR against the `master` branch of this repository.
 
-Please also remember to update the `.gitignore` file when adding code for a new project when necesary.
+Please also remember to update the `.gitignore` file when adding code for a new project when necesary. Or just have a `.gitignore` file in the project dir.
+
+Also, make sure you update the main README file to add your project.
 
 If you want an example, have a look at the [flask hello world app](/Python/Flask/hello-world-app/README.md).
 
