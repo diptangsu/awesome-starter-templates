@@ -124,4 +124,3 @@ Open up a web browser and navigate to
 http://127.0.0.1:8000/
 ```
 Or, click [here](http://127.0.0.1:8000/) to do the same.
-
