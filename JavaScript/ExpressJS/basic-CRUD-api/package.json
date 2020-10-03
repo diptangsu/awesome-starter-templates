@@ -1,9 +1,23 @@
 {
-  "name": "basic-CRUD-api",
+  "name": "basic-crud-api",
   "version": "1.0.0",
   "description": "A Basic CRUD API using ExpressJS",
   "main": "app.js",
   "author": "Gita Alekhya Paul",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "npx nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
