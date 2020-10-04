@@ -1,3 +1,4 @@
-    Java Programming 
-
-Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere
+   <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=666666&height=100&section=header&text=Java%20Programming%20Language&fontSize=55%&fontColor=ffffff">
+  <h2 align="left"><img src="https://img.shields.io/badge/language-java-blue?style=for-the-badge"></h2>
+</p>
