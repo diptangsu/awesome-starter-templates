@@ -7,8 +7,8 @@
 - This project uses something called as **fakeDB**, which is a JSON file acting as a noSQL database, this is to ensure user data is not lost even after closing the application. The **`fakeDB`** is initialized with `[]` in `fakeDB.json`.
 - Create a file named `.env` in root directory with the following data in it:
 
-```javascript
-PORT = 8080;
+```bash
+PORT = 8080
 ```
 
 **To execute the application**

@@ -16,6 +16,9 @@ PORT = 8080
 // To install dependencies
 yarn
 
+//To transpile TS files into JS
+yarn build
+
 // To start the application
 yarn start
 ```
