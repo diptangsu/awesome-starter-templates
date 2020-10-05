@@ -6,8 +6,8 @@
 - Install [Yarn Package Manager](https://yarnpkg.com/getting-started)
 - Create a file named `.env` in root directory with the following data in it:
 
-```javascript
-PORT = 8080;
+```bash
+PORT = 8080
 ```
 
 **To execute the application**
