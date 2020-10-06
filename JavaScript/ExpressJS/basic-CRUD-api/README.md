@@ -1,4 +1,4 @@
-# hello-world-api with ExpressJS
+# basic-CRUD-api with ExpressJS
 
 ## Pre-requisites:
 
