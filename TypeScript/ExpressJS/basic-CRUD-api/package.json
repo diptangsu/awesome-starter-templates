@@ -1,21 +1,25 @@
 {
-  "name": "hello-world-app",
+  "name": "basic-crud-api",
   "version": "1.0.0",
-  "description": "A basic Hello World App using Express in TS",
+  "description": "A Basic CRUD API written in Express Typescript",
   "main": "./build/app.js",
   "author": "Gita Alekhya Paul",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "yup": "^0.29.3"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.0",
     "@types/dotenv": "^8.2.0",
-    "@types/ejs": "^3.0.4",
     "@types/express": "^4.17.8",
+    "@types/mongodb": "^3.5.27",
     "@types/node": "^14.11.2",
+    "@types/yup": "^0.29.7",
     "nodemon": "^2.0.4",
     "tsc": "^1.20150623.0",
     "typescript": "^4.0.3"

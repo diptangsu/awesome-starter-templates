@@ -1,14 +1,15 @@
-# basic-CRUD-api with ExpressJS
+# basic-crud-api with Express in TypeScript
 
 ## Pre-requisites:
 
 - Install [Node.js](https://nodejs.org/en/)
 - Install [Yarn Package Manager](https://yarnpkg.com/getting-started)
-- This project uses something called as **fakeDB**, which is a JSON file acting as a noSQL database, this is to ensure user data is not lost even after closing the application. The **`fakeDB`** is initialized with `[]` in `fakeDB.json`.
+- This project uses [MongoDB](https://www.mongodb.com/) as a NoSQL Database. Please [set up MongoDB Atlas](https://www.mongodb.com/cloud/atlas) beforehand, and have the database connection URI ready.
 - Create a file named `.env` in root directory with the following data in it:
 
 ```bash
 PORT = 8080
+MONGO_URI = "<Your MongoDB Connection URI>"
 ```
 
 **To execute the application**
@@ -16,6 +17,9 @@ PORT = 8080
 ```bash
 // To install dependencies
 yarn
+
+//To transpile TS into JS
+yarn build
 
 // To start the application
 yarn start
