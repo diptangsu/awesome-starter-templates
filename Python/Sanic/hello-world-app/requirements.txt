@@ -13,7 +13,7 @@ multidict==4.7.6
 rfc3986==1.4.0
 sanic==20.6.3
 sniffio==1.1.0
-ujson==3.2.0
+ujson==5.4.0
 urllib3==1.25.10
 uvloop==0.14.0
 websockets==8.1
